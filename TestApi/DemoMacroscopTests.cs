@@ -44,7 +44,7 @@ namespace TestApi
         public void СommandGettime_ReciveXML_15SecLocalTimeDiff()
         {
             //Устанавливаем время
-            DateTime CurentTime = DateTime.Now;
+            DateTime CurentTime = DateTime.UtcNow;
             //Получаем xml документ
             string XmlStr = GetDownloadString(mTimeURLXml, "<?xml");
 
@@ -66,7 +66,7 @@ namespace TestApi
             if (!DateTime.TryParseExact(
                 XmlDoc.DocumentElement.InnerText.Trim(), 
                 "dd.MM.yyyy HH:mm:ss", 
-                CultureInfo.InvariantCulture, 
+                CultureInfo.CurrentCulture, 
                 DateTimeStyles.None, 
                 out ServerTime))
             {
@@ -84,7 +84,7 @@ namespace TestApi
         public void СommandGettime_ReciveJSON_15SecLocalTimeDiff()
         {
             //Устанавливаем время
-            DateTime CurentTime = DateTime.Now;
+            DateTime CurentTime = DateTime.UtcNow;
             //Получаем json документ
             string JsonStr = GetDownloadString(mTimeURLJSON, "\r\n\r\n\"");
 
@@ -107,7 +107,7 @@ namespace TestApi
             if (!DateTime.TryParseExact(
                 Time, 
                 "dd.MM.yyyy HH:mm:ss", 
-                CultureInfo.InvariantCulture, 
+                CultureInfo.CurrentCulture,
                 DateTimeStyles.None, 
                 out ServerTime))
             {

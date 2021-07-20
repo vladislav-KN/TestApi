@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<test-run id="0" runstate="Runnable" testcasecount="3" result="Failed" total="3" passed="1" failed="2" inconclusive="0" skipped="0" asserts="6" engine-version="3.12.0.0" clr-version="4.0.30319.42000" start-time="2021-07-19 17:57:43Z" end-time="2021-07-19 17:57:44Z" duration="1.199780">
+<test-run id="0" runstate="Runnable" testcasecount="3" result="Failed" total="3" passed="0" failed="3" inconclusive="0" skipped="0" asserts="6" engine-version="3.12.0.0" clr-version="4.0.30319.42000" start-time="2021-07-21 10:21:00Z" end-time="2021-07-21 10:21:01Z" duration="1.255899">
   <command-line><![CDATA[nunit3-console  TestApi.dll]]></command-line>
-  <test-suite type="Assembly" id="1-1004" name="TestApi.dll" fullname="C:\Users\Savs\source\repos\TestApi\TestApi\bin\Debug\net472\TestApi.dll" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2021-07-19 17:57:44Z" end-time="2021-07-19 17:57:44Z" duration="0.764921" total="3" passed="1" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="6">
+  <test-suite type="Assembly" id="1-1004" name="TestApi.dll" fullname="C:\Users\Savs\source\repos\TestApi\TestApi\bin\Debug\net472\TestApi.dll" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2021-07-21 10:21:00Z" end-time="2021-07-21 10:21:01Z" duration="0.805051" total="3" passed="0" failed="3" warnings="0" inconclusive="0" skipped="0" asserts="6">
     <environment framework-version="3.12.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.19041.0" platform="Win32NT" cwd="C:\Users\Savs\source\repos\TestApi\TestApi\bin\Debug\net472" machine-name="DESKTOP-B13A3KB" user="Savs" user-domain="DESKTOP-B13A3KB" culture="en-US" uiculture="en-US" os-architecture="x64" />
     <settings>
       <setting name="DisposeRunners" value="True" />
@@ -14,57 +14,76 @@
       <setting name="NumberOfTestWorkers" value="12" />
     </settings>
     <properties>
-      <property name="_PID" value="17144" />
+      <property name="_PID" value="23140" />
       <property name="_APPDOMAIN" value="domain-" />
     </properties>
     <failure>
       <message><![CDATA[One or more child tests had errors]]></message>
     </failure>
-    <test-suite type="TestSuite" id="1-1005" name="TestApi" fullname="TestApi" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2021-07-19 17:57:44Z" end-time="2021-07-19 17:57:44Z" duration="0.748442" total="3" passed="1" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="6">
+    <test-suite type="TestSuite" id="1-1005" name="TestApi" fullname="TestApi" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2021-07-21 10:21:00Z" end-time="2021-07-21 10:21:01Z" duration="0.787588" total="3" passed="0" failed="3" warnings="0" inconclusive="0" skipped="0" asserts="6">
       <failure>
         <message><![CDATA[One or more child tests had errors]]></message>
       </failure>
-      <test-suite type="TestFixture" id="1-1000" name="Tests" fullname="TestApi.Tests" classname="TestApi.Tests" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2021-07-19 17:57:44Z" end-time="2021-07-19 17:57:44Z" duration="0.744886" total="3" passed="1" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="6">
+      <test-suite type="TestFixture" id="1-1000" name="DemoMacroscopTests" fullname="TestApi.DemoMacroscopTests" classname="TestApi.DemoMacroscopTests" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2021-07-21 10:21:00Z" end-time="2021-07-21 10:21:01Z" duration="0.783806" total="3" passed="0" failed="3" warnings="0" inconclusive="0" skipped="0" asserts="6">
         <failure>
           <message><![CDATA[One or more child tests had errors]]></message>
         </failure>
-        <test-case id="1-1003" name="TestConfigurationChanelsXML" fullname="TestApi.Tests.TestConfigurationChanelsXML" methodname="TestConfigurationChanelsXML" classname="TestApi.Tests" runstate="Runnable" seed="119960118" result="Passed" start-time="2021-07-19 17:57:44Z" end-time="2021-07-19 17:57:44Z" duration="0.491338" asserts="2" />
-        <test-case id="1-1002" name="TestTimeJSON" fullname="TestApi.Tests.TestTimeJSON" methodname="TestTimeJSON" classname="TestApi.Tests" runstate="Runnable" seed="752431419" result="Failed" start-time="2021-07-19 17:57:44Z" end-time="2021-07-19 17:57:44Z" duration="0.237925" asserts="2">
+        <test-case id="1-1002" name="СommandGettime_ReciveJSON_15SecLocalTimeDiff" fullname="TestApi.DemoMacroscopTests.СommandGettime_ReciveJSON_15SecLocalTimeDiff" methodname="СommandGettime_ReciveJSON_15SecLocalTimeDiff" classname="TestApi.DemoMacroscopTests" runstate="Runnable" seed="205377753" result="Failed" start-time="2021-07-21 10:21:00Z" end-time="2021-07-21 10:21:01Z" duration="0.650315" asserts="2">
           <failure>
-            <message><![CDATA[  Разница во времени между этим компьютером и сервером больше на 18001.6455774 секунд
+            <message><![CDATA[  Разница во времени между этим компьютером и сервером больше на 56.5813249 секунд
   Expected: True
   But was:  False
 ]]></message>
-            <stack-trace><![CDATA[   at TestApi.Tests.TestTimeJSON() in C:\Users\Savs\source\repos\TestApi\TestApi\Tests.cs:line 87
+            <stack-trace><![CDATA[   at TestApi.DemoMacroscopTests.СommandGettime_ReciveJSON_15SecLocalTimeDiff() in C:\Users\Savs\source\repos\TestApi\TestApi\DemoMacroscopTests.cs:line 118
 ]]></stack-trace>
           </failure>
           <assertions>
             <assertion result="Failed">
-              <message><![CDATA[  Разница во времени между этим компьютером и сервером больше на 18001.6455774 секунд
+              <message><![CDATA[  Разница во времени между этим компьютером и сервером больше на 56.5813249 секунд
   Expected: True
   But was:  False
 ]]></message>
-              <stack-trace><![CDATA[   at TestApi.Tests.TestTimeJSON() in C:\Users\Savs\source\repos\TestApi\TestApi\Tests.cs:line 87
+              <stack-trace><![CDATA[   at TestApi.DemoMacroscopTests.СommandGettime_ReciveJSON_15SecLocalTimeDiff() in C:\Users\Savs\source\repos\TestApi\TestApi\DemoMacroscopTests.cs:line 118
 ]]></stack-trace>
             </assertion>
           </assertions>
         </test-case>
-        <test-case id="1-1001" name="TestTimeXML" fullname="TestApi.Tests.TestTimeXML" methodname="TestTimeXML" classname="TestApi.Tests" runstate="Runnable" seed="465962301" result="Failed" start-time="2021-07-19 17:57:44Z" end-time="2021-07-19 17:57:44Z" duration="0.006971" asserts="2">
+        <test-case id="1-1001" name="СommandGettime_ReciveXML_15SecLocalTimeDiff" fullname="TestApi.DemoMacroscopTests.СommandGettime_ReciveXML_15SecLocalTimeDiff" methodname="СommandGettime_ReciveXML_15SecLocalTimeDiff" classname="TestApi.DemoMacroscopTests" runstate="Runnable" seed="169290343" result="Failed" start-time="2021-07-21 10:21:01Z" end-time="2021-07-21 10:21:01Z" duration="0.009726" asserts="2">
           <failure>
-            <message><![CDATA[  Разница во времени между этим компьютером и сервером больше на 18000.881644 секунд
+            <message><![CDATA[  Разница во времени между этим компьютером и сервером больше на 56.2274783 секунд
   Expected: True
   But was:  False
 ]]></message>
-            <stack-trace><![CDATA[   at TestApi.Tests.TestTimeXML() in C:\Users\Savs\source\repos\TestApi\TestApi\Tests.cs:line 58
+            <stack-trace><![CDATA[   at TestApi.DemoMacroscopTests.СommandGettime_ReciveXML_15SecLocalTimeDiff() in C:\Users\Savs\source\repos\TestApi\TestApi\DemoMacroscopTests.cs:line 78
 ]]></stack-trace>
           </failure>
           <assertions>
             <assertion result="Failed">
-              <message><![CDATA[  Разница во времени между этим компьютером и сервером больше на 18000.881644 секунд
+              <message><![CDATA[  Разница во времени между этим компьютером и сервером больше на 56.2274783 секунд
   Expected: True
   But was:  False
 ]]></message>
-              <stack-trace><![CDATA[   at TestApi.Tests.TestTimeXML() in C:\Users\Savs\source\repos\TestApi\TestApi\Tests.cs:line 58
+              <stack-trace><![CDATA[   at TestApi.DemoMacroscopTests.СommandGettime_ReciveXML_15SecLocalTimeDiff() in C:\Users\Savs\source\repos\TestApi\TestApi\DemoMacroscopTests.cs:line 78
+]]></stack-trace>
+            </assertion>
+          </assertions>
+        </test-case>
+        <test-case id="1-1003" name="Сonfigex_ReciveXML_ChanelsMoreThan6" fullname="TestApi.DemoMacroscopTests.Сonfigex_ReciveXML_ChanelsMoreThan6" methodname="Сonfigex_ReciveXML_ChanelsMoreThan6" classname="TestApi.DemoMacroscopTests" runstate="Runnable" seed="1053429927" result="Failed" start-time="2021-07-21 10:21:01Z" end-time="2021-07-21 10:21:01Z" duration="0.114743" asserts="2">
+          <failure>
+            <message><![CDATA[  В полученной конфигурации 5 каналов
+  Expected: True
+  But was:  False
+]]></message>
+            <stack-trace><![CDATA[   at TestApi.DemoMacroscopTests.Сonfigex_ReciveXML_ChanelsMoreThan6() in C:\Users\Savs\source\repos\TestApi\TestApi\DemoMacroscopTests.cs:line 147
+]]></stack-trace>
+          </failure>
+          <assertions>
+            <assertion result="Failed">
+              <message><![CDATA[  В полученной конфигурации 5 каналов
+  Expected: True
+  But was:  False
+]]></message>
+              <stack-trace><![CDATA[   at TestApi.DemoMacroscopTests.Сonfigex_ReciveXML_ChanelsMoreThan6() in C:\Users\Savs\source\repos\TestApi\TestApi\DemoMacroscopTests.cs:line 147
 ]]></stack-trace>
             </assertion>
           </assertions>
